@@ -10,31 +10,29 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'flutter',
-      home: createHome(),
+      title: 'I am Poor',
+      home: homeScreen(),
     );
   }
 }
 
-class createHome extends StatefulWidget {
-  const createHome({Key? key}) : super(key: key);
+class homeScreen extends StatefulWidget {
+  const homeScreen({Key? key}) : super(key: key);
 
   @override
-  State<createHome> createState() => _createHomeState();
+  State<homeScreen> createState() => _homeScreenState();
 }
 
-class _createHomeState extends State<createHome> {
-  int countNum = 0;
+class _homeScreenState extends State<homeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter'),
-        ),
-        body: Center(
-          child: Image(
-            image: AssetImage('images/1.jpg'),
-          ),
-        ));
+      backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: Text('I am Poor'),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(child: Image(image: AssetImage('images/1.jpg'))),
+    );
   }
 }
