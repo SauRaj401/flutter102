@@ -28,15 +28,13 @@ class _createHomeState extends State<createHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Flutter is a flutter and this is $countNum '),
-      ),
-      body: Center(child: const Text('i am flutter')),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => setState(() => countNum++),
-        tooltip: 'Increment Counter',
-        child: const Icon(Icons.add),
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Flutter'),
+        ),
+        body: Center(
+          child: Image(
+            image: AssetImage('images/1.jpg'),
+          ),
+        ));
   }
 }
